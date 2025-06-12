@@ -1,0 +1,13 @@
+filename = 'improvedtrident-neoforge-1.21.[0-1]-v2.1.jar'
+name = 'Improved Trident'
+side = 'both'
+
+[download]
+hash = '6943279c8217f3ea03b59026750ac7ed168b4f015f26904527dfd14168b09bfc30fc2397217507e38f4f93cbfa1691260f9a9ebe3930faa9dfcf4d75d07f044b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rJA65pFi/versions/ZIcfB23r/improvedtrident-neoforge-1.21.%5B0-1%5D-v2.1.jar'
+
+[update.modrinth]
+mod-id = 'rJA65pFi'
+version = 'ZIcfB23r'
