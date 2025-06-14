@@ -1,0 +1,13 @@
+filename = 'nomansland-1.3.jar'
+name = "No Man's Land"
+side = 'both'
+
+[download]
+hash = '21f117078ba46fede80cfae4916295c99ff9900474e0ca30c96bd4dfbbb00b503f5ad31d34b475983ff033c26c5c0d0a7c5001ef10eda3d14ed948f6fe0edde3'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/kjZCvAn6/versions/x1QIlXLR/nomansland-1.3.jar'
+
+[update.modrinth]
+mod-id = 'kjZCvAn6'
+version = 'x1QIlXLR'

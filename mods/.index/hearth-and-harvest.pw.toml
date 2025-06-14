@@ -1,0 +1,13 @@
+filename = 'hearthandharvest-1.21.1-1.0.7.jar'
+name = 'Hearth and Harvest'
+side = 'both'
+
+[download]
+hash = '70ac93a22ab2ff2fc11c907f391183e143cbbd36170e6c08c066f2d0ba0bd52e220a402cce48bd6ba755e947d3de492822209f44fb3b3a2355c8e57311380908'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8EEEXOzj/versions/hhQ6Del9/hearthandharvest-1.21.1-1.0.7.jar'
+
+[update.modrinth]
+mod-id = '8EEEXOzj'
+version = 'hhQ6Del9'

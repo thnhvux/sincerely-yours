@@ -1,0 +1,13 @@
+filename = 'biolith-neoforge-3.0.4.jar'
+name = 'Biolith'
+side = 'server'
+
+[download]
+hash = '76636ed0e4afeb67da99141f7ccddd8c80626f440f547b3264e33fa50020dfe491ca4673b44c521e81abd85c0c8cb1042e7404b9645ec8694a131ba1555e3cfb'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/iGEl6Crx/versions/L6DGFyAl/biolith-neoforge-3.0.4.jar'
+
+[update.modrinth]
+mod-id = 'iGEl6Crx'
+version = 'L6DGFyAl'

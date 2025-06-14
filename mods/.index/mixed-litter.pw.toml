@@ -1,0 +1,13 @@
+filename = 'mixed_litter-0.1.2.jar'
+name = 'Mixed Litter'
+side = 'both'
+
+[download]
+hash = 'ad161c1636a0cf78ac0e350a413895f06a07f96fe6d1270ad8170e52dbb01a8b18ebd4654ccf241abf1b2c4dff372cde2ab41355a147fdbb6966538c817191d0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/cU1kDASI/versions/oEWuW3Zv/mixed_litter-0.1.2.jar'
+
+[update.modrinth]
+mod-id = 'cU1kDASI'
+version = 'oEWuW3Zv'

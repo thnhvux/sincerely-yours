@@ -1,0 +1,13 @@
+filename = 'no_mans_delight-1.2.0.jar'
+name = "No Man's Delight"
+side = 'both'
+
+[download]
+hash = 'f8904f2a56d376289ab2682092d694285c7e35553ff9632db37732a417a11edb631f9f2e51890074821e1ab2c1943f85369e70af2c7cdbd68df7858407d8faa9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8ffHF0Dn/versions/fALaG8f0/no_mans_delight-1.2.0.jar'
+
+[update.modrinth]
+mod-id = '8ffHF0Dn'
+version = 'fALaG8f0'
