@@ -1,0 +1,13 @@
+filename = 'hackersandslashers-1.1.4-beta-5.jar'
+name = "Hackers 'n Slashers"
+side = 'both'
+
+[download]
+hash = 'f57d2e1383d5bd728899bd599b9fb4bae6731015'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6603024
+project-id = 1176763
