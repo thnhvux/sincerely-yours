@@ -1,8 +1,8 @@
 {
-  "dynamicCrosshair": true,
+  "dynamicCrosshair": false,
   "disableDebugCrosshair": false,
   "thirdPersonCrosshair": false,
-  "hideWithScreen": true,
+  "hideWithScreen": false,
   "hideWithMap": true,
   "fixCenteredCrosshair": false,
   "crosshairConfig": {

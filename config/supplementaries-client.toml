@@ -155,9 +155,9 @@
 	# Range: -10000 ~ 10000
 	config_button_y_offset = 0
 	#Show some tooltip hints to guide players through the mod
-	tooltip_hints = true
+	tooltip_hints = false
 	#Show tooltips items that have been made placeable
-	placeable_tooltips = true
+	placeable_tooltips = false
 	#Enables custom Configured config screen
 	custom_configured_screen = true
 	#ignore this
@@ -178,7 +178,7 @@
 #Game tweaks
 [tweaks]
 	#Allow to right click with a clock to display current time in numerical form
-	clock_right_click = true
+	clock_right_click = false
 	#Adds an overlay to projectile weapons in gui displaying currently selected ammo
 	projectile_weapon_overlay = true
 	#Allow to right click with a compass to display current coordinates in numerical form
@@ -186,7 +186,7 @@
 	#Renders an enchantment glint on placeable enchanted booksNote that turning this on will make book piles use tile renderer instead of baked models making them slower to render
 	placeable_books_glint = false
 	#Enables banner pattern tooltip image preview
-	banner_pattern_tooltip = true
+	banner_pattern_tooltip = false
 	#Enables paintings tooltip image preview
 	paintings_tooltip = true
 	#Enables sherds tooltip image preview
@@ -253,7 +253,7 @@
 		#Adds an overlay to quivers in gui displaying currently selected arrow
 		overlay = true
 		#Allows using your mouse to select an arrow in the quiver GUI
-		mouse_movement_in_gui = true
+		mouse_movement_in_gui = false
 		#Quiver GUI X offset from default position
 		# Default: 0
 		# Range: -1000 ~ 1000

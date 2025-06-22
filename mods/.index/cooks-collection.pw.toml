@@ -1,13 +1,13 @@
-filename = 'cookscollection-0.5.3.jar'
+filename = 'cookscollection-0.5.4.jar'
 name = "Cook's Collection"
 side = 'both'
 
 [download]
-hash = '8450cd00d8d2254f20070609ecda30ab80ffab4505d7cec61962ab066c26c6a2e6f96063713c00f4feb915a708cf8ad37087df6811ef8220ffd73926e6c91649'
+hash = '617b5d2a35d252f933a87a8baba020807acd89b74f6248d9c3ada707c853a210289534519a285b4997b990e347b94ccf72141e8047d709feff0e7e01c2ed7338'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/QC7N8ljN/versions/DJZIWY0m/cookscollection-0.5.3.jar'
+url = 'https://cdn.modrinth.com/data/QC7N8ljN/versions/Q3vFVMhf/cookscollection-0.5.4.jar'
 
 [update.modrinth]
 mod-id = 'QC7N8ljN'
-version = 'DJZIWY0m'
+version = 'Q3vFVMhf'
