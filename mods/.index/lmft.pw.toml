@@ -1,6 +1,6 @@
 filename = 'lmft-1.0.4+1.21-neoforge.jar'
 name = 'Load My F***ing Tags'
-side = 'server'
+side = 'both'
 
 [download]
 hash = 'ae0409b51ba5e267325fedd6c543faee293ec7d301c0efa18b5840b3a0e0440d94a288639db5f7a9edbb06c7acf088c0a10643c6bf36f2be7338f81788dba229'

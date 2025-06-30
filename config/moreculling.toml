@@ -12,7 +12,7 @@ itemFrameLODRange = 16
 useItemFrame3FaceCulling = true
 itemFrame3FaceCullingRange = 2.0
 paintingCulling = true
-leavesCullingMode = "DEFAULT"
+leavesCullingMode = "CHECK"
 leavesCullingAmount = 2
 includeMangroveRoots = false
 endGatewayCulling = false
@@ -20,4 +20,5 @@ beaconBeamCulling = true
 useOnModdedBlocksByDefault = true
 
 [modCompatibility]
+enderscape = true
 minecraft = true

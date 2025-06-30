@@ -1,0 +1,13 @@
+filename = 'create_alloyed-2.0.5+1.21.1.jar'
+name = 'Create: Alloyed'
+side = 'both'
+
+[download]
+hash = 'fb0c12fa00c36805e86423043eb678209e7e51bb70dd3edd593e3cf0bdd5a6579d2c6bbb6ed44883805311784af4db8ed31e281f852cf563deb1b3ab45add108'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/KUInlTFo/versions/xyO0Wv12/create_alloyed-2.0.5%2B1.21.1.jar'
+
+[update.modrinth]
+mod-id = 'KUInlTFo'
+version = 'xyO0Wv12'

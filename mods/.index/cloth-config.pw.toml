@@ -1,13 +1,13 @@
 filename = 'cloth-config-15.0.140-neoforge.jar'
-name = 'Cloth Config API'
+name = 'Cloth Config API (Fabric/Forge/NeoForge)'
 side = 'both'
 
 [download]
-hash = 'aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar'
+hash = 'c3e5733ba4503b102589a026000fd5ce0212f6f2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update.modrinth]
-mod-id = '9s6osm5g'
-version = 'izKINKFg'
+[update.curseforge]
+file-id = 5729127
+project-id = 348521

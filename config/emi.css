@@ -448,7 +448,7 @@
 	 * Whether development functions should be enabled. Not recommended for general
 	 * play.
 	 */
-	dev-mode: true;
+	dev-mode: false;
 
 	/**
 	 * Whether editing the index is enabled
@@ -458,12 +458,12 @@
 	/**
 	 * Whether to log untranslated tags as warnings.
 	 */
-	log-untranslated-tags: true;
+	log-untranslated-tags: false;
 
 	/**
 	 * Whether to log ingredients that don't have a representative tag as warnings.
 	 */
-	log-non-tag-ingredients: true;
+	log-non-tag-ingredients: false;
 
 	/**
 	 * Whether hovering the output of a recipe should show the recipe's EMI ID.

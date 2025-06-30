@@ -1,13 +1,13 @@
-filename = 'hearthandharvest-1.21.1-1.0.7.jar'
+filename = 'hearthandharvest-1.21.1-1.0.8.jar'
 name = 'Hearth and Harvest'
 side = 'both'
 
 [download]
-hash = '70ac93a22ab2ff2fc11c907f391183e143cbbd36170e6c08c066f2d0ba0bd52e220a402cce48bd6ba755e947d3de492822209f44fb3b3a2355c8e57311380908'
+hash = '8d52fe812888e0521095486b14f81dae6d4bbf06df745314071ded4d03053765fa067d056cbe94d931e83d378f7dcf186c89b8f6d86019f091d24dea303dabdc'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/8EEEXOzj/versions/hhQ6Del9/hearthandharvest-1.21.1-1.0.7.jar'
+url = 'https://cdn.modrinth.com/data/8EEEXOzj/versions/RC4ILVtJ/hearthandharvest-1.21.1-1.0.8.jar'
 
 [update.modrinth]
 mod-id = '8EEEXOzj'
-version = 'hhQ6Del9'
+version = 'RC4ILVtJ'

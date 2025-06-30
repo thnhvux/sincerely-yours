@@ -1,6 +1,6 @@
 filename = 'trimmed-neo-1.21-3.0.0.jar'
 name = 'Trimmed'
-side = 'client'
+side = 'both'
 
 [download]
 hash = 'd6efb0c378b94d539cdd99ce7ce11862518e971973210ff383506996af69b40a1fb54aecd71ebf73bd0f1e453ce80227b810781d1ad7f9a2dd076b7bb6d00811'
