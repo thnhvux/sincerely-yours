@@ -1,6 +1,6 @@
 filename = 'spyglass_improvements-1.5.7+mc1.21+neoforge.jar'
 name = 'Spyglass Improvements'
-side = 'client'
+side = 'both'
 
 [download]
 hash = '6b4933795f3fda0d8c042c35c8f95ce47db88f2ec06b15a6c803298e660a1cb18223ed5fcb96d15aeabde540abf050f3a19ca23ebad4d060afc8860174af937f'

@@ -1,6 +1,6 @@
 filename = 'immersiveoverlays-neoforge-1.2.0+1.21.1.jar'
 name = 'Immersive Overlays'
-side = 'client'
+side = 'both'
 
 [download]
 hash = 'e9f529b3654bc38d6e7636cebfffb6e9fc1c3fa786d819c86eb5944eb5af592a3f5c0b196a381ea9aae7ef279b5f29f94e74730d575aade4e45c95a084a5d783'

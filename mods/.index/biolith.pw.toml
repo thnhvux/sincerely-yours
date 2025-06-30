@@ -1,13 +1,13 @@
-filename = 'biolith-neoforge-3.0.4.jar'
+filename = 'biolith-neoforge-3.0.5.jar'
 name = 'Biolith'
-side = 'server'
+side = 'both'
 
 [download]
-hash = '76636ed0e4afeb67da99141f7ccddd8c80626f440f547b3264e33fa50020dfe491ca4673b44c521e81abd85c0c8cb1042e7404b9645ec8694a131ba1555e3cfb'
+hash = '0d1f5609780740b1e4101e58454c6ad51b11a1e9e414014435cde397822ab6ae9f37d93620b17cdbf7966398f0ccd3173093f6fa3cf9e9bb1f44724d5e479794'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/iGEl6Crx/versions/L6DGFyAl/biolith-neoforge-3.0.4.jar'
+url = 'https://cdn.modrinth.com/data/iGEl6Crx/versions/Q5RdaaiD/biolith-neoforge-3.0.5.jar'
 
 [update.modrinth]
 mod-id = 'iGEl6Crx'
-version = 'L6DGFyAl'
+version = 'Q5RdaaiD'
