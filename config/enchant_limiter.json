@@ -1,0 +1,5 @@
+{
+  "default_limit": 3,
+  "apply_to_enchanted_books": true,
+  "apply_to_damageable_items": true
+}

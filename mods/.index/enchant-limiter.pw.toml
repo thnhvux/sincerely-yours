@@ -1,0 +1,13 @@
+filename = 'enchant_limiter-neoforge-1.0.3.jar'
+name = 'Enchant Limiter (RPG Tweaks)'
+side = 'both'
+
+[download]
+hash = '15daba03d88c5dfa97edc8564bf1a777a3021f573d4a6e2374ceb0bde99d3d4f5b7d4ac51a05455ed5d2870fda6685314f86b5dff3a6798cb3f2e2a29ea827c3'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/MhfKWFVm/versions/mgmFNQ6V/enchant_limiter-neoforge-1.0.3.jar'
+
+[update.modrinth]
+mod-id = 'MhfKWFVm'
+version = 'mgmFNQ6V'
