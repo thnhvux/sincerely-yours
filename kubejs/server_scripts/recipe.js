@@ -6,39 +6,44 @@ ServerEvents.recipes(event => {
 
   //Remove recipe
   //Food
-  event.remove({input: 'minecraft:wheat', output: 'hearthandharvest:batter'})
-  removeCrafting('#c:eggs', 'minecraft:cake')
-  removeCrafting('minecraft:egg', 'nomansland:fruit_cake')
-  removeCrafting('minecraft:sugar', 'enderscape:chorus_cake_roll')
-  removeCrafting('minecraft:egg', 'nomansland:pancake')
-  removeCrafting('minecraft:egg', 'hearthandharvest:carrot_cake')
-  removeCrafting('minecraft:gunpowder', 'mynethersdelight:magma_cake_block')
-
-  removeCrafting('minecraft:egg', 'nomansland:sweet_tart')
-  removeCrafting('minecraft:egg', 'nomansland:maple_tart')
-
-  removeCrafting('minecraft:egg', 'nomansland:pear_cobbler')
-  removeCrafting('minecraft:wheat', 'brewinandchewin:pizza')
-
-  removeCrafting('minecraft:sugar', 'minecraft:pumpkin_pie')
-  
+  event.remove({id: 'minecraft:cake'})
+  event.remove({id: 'farmersdelight:cake_from_milk_bottle'})
+  event.remove({id: 'create:crafting/curiosities/cake'})
+  event.remove({id: 'nomansland:food/fruit_cake'})
+  event.remove({id: 'enderscape:chorus_cake_roll'})
+  event.remove({id: 'nomansland:integration/farmersdelight/pancake'})
+  event.remove({id: 'hearthandharvest:carrot_cake'})
+  event.remove({id: 'mynethersdelight:crafting/magma_cake'})
+  event.remove({id: 'nomansland:food/sweet_tart'})
+  event.remove({id: 'nomansland:food/maple_tart'})
+  event.remove({id: 'nomansland:food/pear_cobbler'})
+  event.remove({id: 'brewinandchewin:pizza'})
+  event.remove({id: 'minecraft:pumpkin_pie'})
+  event.remove({type: 'cookscollection:baking', output: 'minecraft:pumpkin_pie'})
   event.remove({type: 'cookscollection:baking', input: 'farmersdelight:tomato_sauce', output: 'farmersdelight:apple_pie'})
-  event.remove({input: 'minecraft:bowl', output: 'farmersdelight:shepherds_pie_block'})
-  event.remove({type: 'cookscollection:baking', input: 'farmersdelight:onion', output: 'farmersdelight:shepherds_pie'})
-  removeCrafting('minecraft:sugar', 'hearthandharvest:blueberry_pie')
-  removeCrafting('minecraft:sugar', 'hearthandharvest:raspberry_pie')
-  removeCrafting('minecraft:sugar', 'hearthandharvest:grape_pie')
-  removeCrafting('minecraft:sugar', 'hearthandharvest:chicken_pot_pie')
-
-  event.remove({input: 'minecraft:wheat', output: 'minecraft:cookie'})
-  event.remove({input: 'minecraft:wheat', output: 'farmersdelight:sweet_berry_cookie'})
+  event.remove({id: 'farmersdelight:shepherds_pie_block'})
+  event.remove({id: 'hearthandharvest:blueberry_pie'})
+  event.remove({id: 'hearthandharvest:raspberry_pie'})
+  event.remove({id: 'hearthandharvest:grape_pie'})
+  event.remove({id: 'hearthandharvest:chicken_pot_pie'})
+  event.remove({type: 'cookscollection:baking', output: 'farmersdelight:chocolate_pie'})
+  event.remove({id: 'minecraft:cookie'})
+  event.remove({id: 'farmersdelight:sweet_berry_cookie'})
   event.remove({type: 'cookscollection:baking', input: 'minecraft:wheat', output: 'farmersdelight:sweet_berry_cookie'})
-  event.remove({input: 'minecraft:wheat', output: 'farmersdelight:honey_cookie'})
-  removeCrafting('minecraft:wheat', 'hearthandharvest:peanut_butter_cookie')
-  event.remove({input: 'minecraft:wheat', output: 'no_mans_delight:walnut_cookie'})
+  event.remove({id: 'farmersdelight:honey_cookie'})
+  event.remove({id: 'hearthandharvest:peanut_butter_cookie'})
+  event.remove({id: 'no_mans_delight:crafting/walnut_cookie'})
+  event.remove({id: 'minecraft:bread'})
+  event.remove({type: 'farmersdelight:cooking', output: 'brewinandchewin:vegetable_omelet'})
+  event.remove({type: 'farmersdelight:cooking', output: 'mynethersdelight:burnt_roll'})
+  event.remove({id: 'mynethersdelight:crafting/burnt_roll'})
+  event.remove({id: 'mynethersdelight:crafting/striderloaf'})
+  event.remove({type: 'farmersdelight:cooking', output: 'mynethersdelight:egg_soup'})
+  event.remove({type: 'farmersdelight:cutting', input: 'mynethersdelight:bread_loaf', output: 'mynethersdelight:slices_of_bread'})
 
   //Readd recipe
   //Food
+  //Shapeless
   event.shapeless(
     Item.of('hearthandharvest:batter', 1),
     [
@@ -50,6 +55,37 @@ ServerEvents.recipes(event => {
       'cookscollection:salt'
     ]
   )
+  event.shapeless(
+    Item.of('farmersdelight:wheat_dough', 1),
+    [
+      'create:wheat_flour',
+      'minecraft:water_bucket'
+    ]
+  )
+  event.shapeless(
+    Item.of('mynethersdelight:burnt_roll', 1),
+    [
+      'minecraft:magma_cream',
+      '#c:foods/raw_meat',
+      ['minecraft:twisting_vines', 'minecraft:crimson_roots', 'minecraft:nether_wart']
+    ]
+  )
+
+  //Shaped
+  event.shaped(
+    Item.of('farmersdelight:wheat_dough', 3),
+    [
+      'AAA',
+      'B  '
+    ],
+    {
+      A: 'create:wheat_flour',
+      B: '#c:eggs'
+    }
+  )
+  
+
+  //Baking
   event.custom({
     "type": "cookscollection:baking",
     "ingredients": [
@@ -60,6 +96,22 @@ ServerEvents.recipes(event => {
     ],
     "result": {
         "id": "minecraft:cake",
+        "count": 1
+    },
+    "cookingtime": 200
+  })
+  event.custom({
+    "type": "cookscollection:baking",
+    "ingredients": [
+      {"item": "farmersdelight:pumpkin_slice"},
+      {"tag": "c:eggs"},
+      {"item": "farmersdelight:pumpkin_slice"},
+      {"item": "minecraft:sugar"},
+      {"item": "farmersdelight:pie_crust"},
+      {"item": "minecraft:sugar"}
+    ],
+    "result": {
+        "id": "minecraft:pumpkin_pie",
         "count": 1
     },
     "cookingtime": 200
@@ -126,15 +178,15 @@ ServerEvents.recipes(event => {
       {"item": "minecraft:magma_cream"},
       {"item": "minecraft:magma_cream"},
       {"item": "minecraft:magma_cream"},
-      {"item": "minecraft:gunpower"},
+      {"item": "minecraft:gunpowder"},
       {"item": "mynethersdelight:hot_cream"},
       {"item": "minecraft:gunpowder"},
-      {"item": "minecraft:straw"},
-      {"item": "minecraft:straw"},
-      {"item": "minecraft:straw"}
+      {"item": "farmersdelight:straw"},
+      {"item": "farmersdelight:straw"},
+      {"item": "farmersdelight:straw"},
     ],
     "result": {
-        "id": "'mynethersdelight:magma_cake_block",
+        "id": "mynethersdelight:magma_cake_block",
         "count": 1
     },
     "cookingtime": 200
@@ -216,13 +268,14 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "cookscollection:baking",
     "ingredients": [
-      {"item": "minecraft:potato"},
+      {"item": "minecraft:baked_potato"},
       {"item": "hearthandharvest:batter"},
-      {"item": "minecraft:potato"},
+      {"item": "minecraft:baked_potato"},
       {"tag": "c:foods/raw_mutton"},
       {"tag": "c:foods/raw_mutton"},
       {"tag": "c:foods/raw_mutton"},
       {"item": "farmersdelight:onion"},
+      {"item": "farmersdelight:pie_crust"},
       {"item": "farmersdelight:onion"}
     ],
     "result": {
@@ -234,13 +287,33 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "cookscollection:baking",
     "ingredients": [
-      {"item": "minecraft:baked_potato"},
+      {"item": "minecraft:potato"},
       {"item": "hearthandharvest:batter"},
-      {"item": "minecraft:baked_potato"},
+      {"item": "minecraft:potato"},
+      {"tag": "c:foods/cooked_mutton"},
+      {"tag": "c:foods/cooked_mutton"},
+      {"tag": "c:foods/cooked_mutton"},
+      {"item": "farmersdelight:onion"},
+      {"item": "farmersdelight:pie_crust"},
+      {"item": "farmersdelight:onion"}
+    ],
+    "result": {
+        "id": "farmersdelight:shepherds_pie_block",
+        "count": 1
+    },
+    "cookingtime": 200
+  })
+  event.custom({
+    "type": "cookscollection:baking",
+    "ingredients": [
+      {"item": "minecraft:potato"},
+      {"item": "hearthandharvest:batter"},
+      {"item": "minecraft:potato"},
       {"tag": "c:foods/raw_mutton"},
       {"tag": "c:foods/raw_mutton"},
       {"tag": "c:foods/raw_mutton"},
       {"item": "farmersdelight:onion"},
+      {"item": "farmersdelight:pie_crust"},
       {"item": "farmersdelight:onion"}
     ],
     "result": {
@@ -282,6 +355,21 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "cookscollection:baking",
     "ingredients": [
+      {"item": "hearthandharvest:red_grapes"},
+      {"item": "hearthandharvest:red_grapes"},
+      {"item": "hearthandharvest:red_grapes"},
+      {"item": "hearthandharvest:batter"},
+      {"item": "farmersdelight:pie_crust"},
+    ],
+    "result": {
+        "id": "hearthandharvest:grape_pie",
+        "count": 1
+    },
+    "cookingtime": 200
+  })
+  event.custom({
+    "type": "cookscollection:baking",
+    "ingredients": [
       {"item": "hearthandharvest:batter"},
       {"item": "farmersdelight:pie_crust"},
       {"item": "cookscollection:salt"},
@@ -316,6 +404,25 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "cookscollection:baking",
     "ingredients": [
+      {"item": "minecraft:cocoa_beans"},
+      {"item": "minecraft:cocoa_beans"},
+      {"item": "minecraft:cocoa_beans"},
+      {"tag": "c:foods/milk"},
+      {"tag": "c:eggs"},
+      {"tag": "c:foods/milk"},
+      {"item": "minecraft:sugar"},
+      {"item": "farmersdelight:pie_crust"},
+      {"item": "minecraft:sugar"}
+    ],
+    "result": {
+        "id": "farmersdelight:chocolate_pie",
+        "count": 1
+    },
+    "cookingtime": 200
+  })
+  event.custom({
+    "type": "cookscollection:baking",
+    "ingredients": [
       {"item": "farmersdelight:wheat_dough"},
       {"item": "hearthandharvest:peanut_butter"},
       {"item": "minecraft:sugar"}
@@ -339,7 +446,89 @@ ServerEvents.recipes(event => {
     },
     "cookingtime": 200
   })
+  event.custom({
+    "type": "cookscollection:baking",
+    "ingredients": [
+      {"item": "mynethersdelight:minced_strider"},
+      {"item": "mynethersdelight:minced_strider"},
+      {"item": "mynethersdelight:minced_strider"},
+      {"item": "mynethersdelight:minced_strider"},
+      {"item": "farmersdelight:wheat_dough"},
+      {"item": "minecraft:bowl"}
+    ],
+    "result": {
+        "id": "mynethersdelight:striderloaf",
+        "count": 1
+    },
+    "cookingtime": 200
+  })
 
+  //Cooking
+  event.custom({
+    "type": "farmersdelight:cooking",
+    "container": {"count": 1, "id": "minecraft:bowl"},
+    "experience": 1.0,
+    "ingredients": [
+      {"item": "hearthandharvest:cooking_oil"},
+      {"tag": "c:eggs"},
+      {"tag": "c:eggs"},
+      {"tag": "c:foods/onion"},
+      {"tag": "c:crops/carrot"}
+    ],
+    "recipe_book_tab": "meals",
+    "result": {"count": 1, "id": "brewinandchewin:vegetable_omelet"}
+  })
+  event.custom({
+    "type": "farmersdelight:cooking",
+    "container": {"count": 2, "id": "minecraft:bowl"},
+    "experience": 1.0,
+    "ingredients": [
+      {"tag": "c:foods/cooked_egg"},
+      {"tag": "c:foods/cooked_egg"},
+      {"tag": "c:foods/cooked_egg"},
+      {"tag": "c:foods/cooked_egg"},
+      {"item": "farmersdelight:cabbage_leaf"},
+      {"tag": "c:foods/vegetable"}
+    ],
+    "recipe_book_tab": "meals",
+    "result": {"count": 2, "id": "mynethersdelight:egg_soup"}
+  })
+
+  //Fermenting
+  event.custom({
+    "type": "brewinandchewin:fermenting",
+    "base_fluid": {
+      "amount": 1000,
+      "ingredient": {"tag": "#c:milk"},
+      "unit": "millibuckets"
+    },
+    "experience": 0,
+    "ingredients": [
+      {"item": "create:wheat_flour"},
+      {"item": "cookscollection:salt"},
+      []
+    ],
+    "result": {"count": 2, "id": "farmersdelight:wheat_dough"},
+    "temperature": 2
+  })
+
+  //Slicing
+  event.custom({
+    "type": "farmersdelight:cutting",
+    "ingredients": [{"item": "minecraft:bread"}],
+    "result": [
+      {"item": {"count": 2, "id": "mynethersdelight:slices_of_bread"}},
+    ],
+    "tool": {"tag": "c:tools/knife"}
+  })
+  event.custom({
+    "type": "farmersdelight:cutting",
+    "ingredients": [{"item": "mynethersdelight:bread_loaf"}],
+    "result": [
+      {"item": {"count": 10, "id": "mynethersdelight:slices_of_bread"}},
+    ],
+    "tool": {"tag": "c:tools/knife"}
+  })
   //Modify recipe
 
 })
