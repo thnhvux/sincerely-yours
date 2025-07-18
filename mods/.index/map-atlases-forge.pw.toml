@@ -1,13 +1,13 @@
-filename = 'map_atlases-1.21-6.3.4-neoforge.jar'
+filename = 'map_atlases-1.21-6.3.5-neoforge.jar'
 name = 'Map Atlases [Forge]'
 side = 'both'
 
 [download]
-hash = 'cb7485fd63c16bc1e7a04b26b2a5731f73f8f1d2e37c1a2a06a52e8b3d79b20be5dedd67569cfa45976bb52d17250a35c16c70ad8c7428578cf108d00ecd5272'
+hash = '02c5fc546a55ef1403751fe410557d99b3175eb339d6c3be07e87ec6eaaa6d2d9c7c5ed9f0af35ea867ced97fe5106bfc89a6c3a34dc628e9624214636bb7b87'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/4hwXMFif/versions/HvUyCUNy/map_atlases-1.21-6.3.4-neoforge.jar'
+url = 'https://cdn.modrinth.com/data/4hwXMFif/versions/nEPrX5Se/map_atlases-1.21-6.3.5-neoforge.jar'
 
 [update.modrinth]
 mod-id = '4hwXMFif'
-version = 'HvUyCUNy'
+version = 'nEPrX5Se'

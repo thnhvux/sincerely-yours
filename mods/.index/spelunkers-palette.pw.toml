@@ -1,0 +1,13 @@
+filename = 'spelunkers_palette-1.3.0.jar'
+name = "Spelunker's Palette"
+side = 'both'
+
+[download]
+hash = 'd15ab1f68cd6a456511dfee51feb4f32906930b22c60f88ad3120af93c43316c5b2414248b3f1d1be538d4503b08aebf66ff600977ae2b90cd9e729ff92d4f15'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/OWNJpWZE/versions/QMfbDRTi/spelunkers_palette-1.3.0.jar'
+
+[update.modrinth]
+mod-id = 'OWNJpWZE'
+version = 'QMfbDRTi'
